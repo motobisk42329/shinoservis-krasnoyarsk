@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шиносервис — Профессиональный шиномонтаж и ремонт дисков в Красноярске</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0a0f1d',
+                        cardBg: '#131b2e',
+                        cardBorder: '#1f2d47',
+                        accentSky: '#38bdf8',
+                        accentBlue: '#0284c7',
+                        gold: '#fbbf24'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-gray-100 font-['Inter'] antialiased selection:bg-accentSky selection:text-slate-900 pb-24 md:pb-0">
+
+    <!-- Верхняя шапка -->
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-cardBorder">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentBlue to-accentSky flex items-center justify-center shadow-lg shadow-accentSky/20">
+                    <i class="fa-solid fa-compact-disc text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="block font-black text-lg tracking-tight text-white leading-none uppercase">ШИНОСЕРВИС</span>
+                    <span class="text-[11px] text-gray-400 font-medium tracking-wide">Красноярск • ул. Ястынская, 19/3</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="tel:+79233221546" class="hidden sm:inline-flex items-center space-x-2 bg-gray-800/80 hover:bg-gray-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition border border-gray-700">
+                    <i class="fa-solid fa-phone text-accentSky"></i>
+                    <span>+7 (923) 322-15-46</span>
+                </a>
+                <a href="https://yandex.ru/maps/org/shinoservis/36256778326" target="_blank" class="bg-gradient-to-r from-accentBlue to-sky-500 hover:opacity-90 text-white px-4 py-2 rounded-xl text-sm font-bold shadow-lg shadow-accentSky/20 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <span>Маршрут</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="relative pt-10 pb-12 px-4 overflow-hidden">
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accentSky/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto relative z-10">
+            
+            <!-- Плашки статуса и рейтинга -->
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+                <div class="inline-flex items-center space-x-2 bg-cardBg/90 border border-cardBorder px-3.5 py-1.5 rounded-full text-xs font-semibold">
+                    <div class="flex text-gold space-x-0.5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span class="text-white">4.3 на Яндекс Картах</span>
+                    <span class="text-gray-600">•</span>
+                    <span class="text-gray-400">69 оценок</span>
+                </div>
+                <span class="inline-flex items-center space-x-1.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 rounded-full text-xs font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Работаем ежедневно до 22:00</span>
+                </span>
+            </div>
+
+            <!-- Заголовок -->
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-4 leading-tight">
+                Шиносервис & Профессиональный <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentSky to-sky-300">ремонт дисков</span> в Красноярске
+            </h1>
+
+            <p class="text-gray-300 text-base sm:text-lg mb-8 leading-relaxed max-w-2xl">
+                Быстрый и качественный шиномонтаж на ул. Ястынская, 19/3. Точная балансировка, устранение сложнопрофильных порезов и грыж, аргоновая сварка дисков и дошиповка зимних шин.
+            </p>
+
+            <!-- Кнопки быстрого действия -->
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="tel:+79233221546" class="flex items-center justify-center space-x-3 bg-gradient-to-r from-accentBlue to-sky-500 hover:opacity-95 text-white font-bold py-3.5 px-6 rounded-2xl shadow-xl shadow-accentSky/20 transition text-base">
+                    <i class="fa-solid fa-phone-volume text-lg"></i>
+                    <span>Позвонить мастеру</span>
+                </a>
+                <a href="#services" class="flex items-center justify-center space-x-2 bg-cardBg hover:bg-cardBorder text-gray-200 font-semibold py-3.5 px-6 rounded-2xl border border-cardBorder transition text-base">
+                    <i class="fa-solid fa-screwdriver-wrench text-accentSky"></i>
+                    <span>Услуги и виды работ</span>
+                </a>
+            </div>
+
+            <!-- Иконки-преимущества -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10">
+                <div class="bg-cardBg/60 backdrop-blur border border-cardBorder p-3.5 rounded-2xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">До 22:00</div>
+                        <div class="text-[11px] text-gray-400">Удобный график</div>
+                    </div>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur border border-cardBorder p-3.5 rounded-2xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0">
+                        <i class="fa-solid fa-volcano"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Сварка дисков</div>
+                        <div class="text-[11px] text-gray-400">Ремонт трещин</div>
+                    </div>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur border border-cardBorder p-3.5 rounded-2xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Дошиповка шин</div>
+                        <div class="text-[11px] text-gray-400">Ремонтными шипами</div>
+                    </div>
+                </div>
+                <div class="bg-cardBg/60 backdrop-blur border border-cardBorder p-3.5 rounded-2xl flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs font-bold text-white">Балансировка</div>
+                        <div class="text-[11px] text-gray-400">Без биения руля</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Основные услуги -->
+    <section id="services" class="py-12 px-4 bg-cardBg/30 border-t border-b border-cardBorder/80">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-end justify-between mb-8">
+                <div>
+                    <span class="text-accentSky font-bold text-xs uppercase tracking-wider block mb-1">Спектр услуг</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Услуги шиносервиса</h2>
+                </div>
+                <span class="text-xs text-gray-400 hidden sm:inline-block">Профессиональное оборудование</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Услуга 1 -->
+                <div class="bg-cardBg border border-cardBorder hover:border-gray-700 p-5 rounded-2xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-sky-500/15 text-sky-400 text-xs font-bold px-2.5 py-1 rounded-lg">Сезонная переобувка</span>
+                            <span class="text-sm font-extrabold text-white">Легковые & Внедорожники</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Комплексный шиномонтаж и мойка</h3>
+                        <p class="text-gray-400 text-sm mb-4">Аккуратный демонтаж, отмывка грязи с дисков для идеальной точности и динамометрическая протяжка колес.</p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-1.5 border-t border-cardBorder pt-3">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Точная балансировка колес любого радиуса</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Замена вентилей и уплотнение бортов</span></li>
+                    </ul>
+                </div>
+
+                <!-- Услуга 2 -->
+                <div class="bg-cardBg border border-cardBorder hover:border-gray-700 p-5 rounded-2xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-blue-500/15 text-blue-400 text-xs font-bold px-2.5 py-1 rounded-lg">Ремонт шин</span>
+                            <span class="text-sm font-extrabold text-white">Вулканизация</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Устранение боковых порезов и грыж</h3>
+                        <p class="text-gray-400 text-sm mb-4">Надежное восстановление поврежденного корда шины горячей и холодной вулканизацией с гарантией безопасности.</p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-1.5 border-t border-cardBorder pt-3">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Ремонт сложных проколов и порезов</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Установка усиленных кордовых пластырей</span></li>
+                    </ul>
+                </div>
+
+                <!-- Услуга 3 -->
+                <div class="bg-cardBg border border-cardBorder hover:border-gray-700 p-5 rounded-2xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-purple-500/15 text-purple-400 text-xs font-bold px-2.5 py-1 rounded-lg">Спецработы</span>
+                            <span class="text-sm font-extrabold text-white">Сварка & Правка</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Ремонт и аргоновая сварка дисков</h3>
+                        <p class="text-gray-400 text-sm mb-4">Устранение вмятин, геометрии, «восьмерок» и заварка трещин на литых и штампованных дисках.</p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-1.5 border-t border-cardBorder pt-3">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Прокатка и выпрямление литых дисков</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Сварочные работы аргоном</span></li>
+                    </ul>
+                </div>
+
+                <!-- Услуга 4 -->
+                <div class="bg-cardBg border border-cardBorder hover:border-gray-700 p-5 rounded-2xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-amber-500/15 text-amber-400 text-xs font-bold px-2.5 py-1 rounded-lg">Зимний сезон</span>
+                            <span class="text-sm font-extrabold text-white">Подбор & Ошиповка</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Ошиповка б/у шин, продажа шин и дисков</h3>
+                        <p class="text-gray-400 text-sm mb-4">Ошиповка ремонтными шипами в штатные места б/у зимней резины. Помощь в подборе и продажа шин и дисков.</p>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-1.5 border-t border-cardBorder pt-3">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Продление жизни зимней резине</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-accentSky"></i><span>Шины и диски в наличии и под заказ</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Теги выполняемых услуг -->
+            <div class="mt-8 bg-cardBg border border-cardBorder p-5 rounded-2xl">
+                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center space-x-2">
+                    <i class="fa-solid fa-circle-info text-accentSky"></i>
+                    <span>Все направления «Шиносервиса» на Ястынской</span>
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Легковой шиномонтаж</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Балансировка</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Ремонт боковых порезов</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Вулканизация</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Сварка дисков аргоном</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Правка литых дисков</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Ошиповка шин</span>
+                    <span class="bg-gray-800/80 text-gray-300 text-xs px-3 py-1.5 rounded-xl border border-gray-700/60">Продажа шин и дисков</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Отзывы реальных автовладельцев -->
+    <section class="py-12 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-accentSky font-bold text-xs uppercase tracking-wider block mb-1">Реальные отзывы</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Что о нас пишут на Картах</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- Отзыв 1 -->
+                <div class="bg-cardBg border border-cardBorder p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold text-xs mb-3 space-x-0.5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic mb-4 leading-relaxed">
+                            «Отличный шиномонтаж! Ребята работают быстро, слаженно и без лишних перекуров. Делал боковой порез — заварили качественно, отбалансировали идеально, ничего не бьет на трассе.»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardBorder pt-3">
+                        <div class="w-8 h-8 rounded-full bg-accentSky/20 text-accentSky font-bold flex items-center justify-center text-xs">С</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Сергей М.</div>
+                            <div class="text-[10px] text-gray-400">Знаток Яндекс Карт</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="bg-cardBg border border-cardBorder p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold text-xs mb-3 space-x-0.5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic mb-4 leading-relaxed">
+                            «Приезжаю на переобувку уже третий сезон подряд. Нравится подход: диски чистят перед балансировкой, протягивают колеса вручную. Однозначно рекомендую!»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardBorder pt-3">
+                        <div class="w-8 h-8 rounded-full bg-accentSky/20 text-accentSky font-bold flex items-center justify-center text-xs">А</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Алексей П.</div>
+                            <div class="text-[10px] text-gray-400">Знаток Яндекс Карт</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="bg-cardBg border border-cardBorder p-5 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold text-xs mb-3 space-x-0.5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic mb-4 leading-relaxed">
+                            «Спасли колесо после жесткой ямы — диск выпрямили, грыжу убрали. Работают до 22:00, что очень выручает после работы. Спасибо мастерам за оперативность!»
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-cardBorder pt-3">
+                        <div class="w-8 h-8 rounded-full bg-accentSky/20 text-accentSky font-bold flex items-center justify-center text-xs">Д</div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Дмитрий К.</div>
+                            <div class="text-[10px] text-gray-400">Знаток Яндекс Карт</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и локация -->
+    <section class="py-12 px-4 bg-cardBg/30 border-t border-cardBorder/80">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-accentSky font-bold text-xs uppercase tracking-wider block mb-1">Как нас найти</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">Контакты и адрес</h2>
+                <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                    Находимся в микрорайоне Северный. Ждем вас ежедневно до 22:00!
+                </p>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0 mt-0.5">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-400 font-medium">Адрес сервиса</div>
+                            <div class="text-white font-bold text-base">г. Красноярск, ул. Ястынская, 19/3</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0 mt-0.5">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-400 font-medium">Телефон мастерской</div>
+                            <a href="tel:+79233221546" class="text-white font-bold text-base hover:text-accentSky transition">+7 (923) 322-15-46</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-accentSky/10 flex items-center justify-center text-accentSky shrink-0 mt-0.5">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-400 font-medium">График работы</div>
+                            <div class="text-white font-bold text-base">Ежедневно с 09:00 до 22:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://yandex.ru/maps/org/shinoservis/36256778326" target="_blank" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-accentBlue to-sky-500 hover:opacity-90 text-white font-bold py-3 px-5 rounded-xl transition text-sm">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Открыть в Яндекс Картах</span>
+                </a>
+            </div>
+
+            <!-- Карточка вызова -->
+            <div class="bg-cardBg border border-cardBorder p-6 rounded-3xl text-center relative overflow-hidden shadow-2xl">
+                <div class="w-16 h-16 rounded-2xl bg-accentSky/15 text-accentSky flex items-center justify-center mx-auto mb-4 text-2xl">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Шиносервис на Ястынской</h3>
+                <p class="text-gray-400 text-sm mb-6">Качественная переобувка, ремонт боковых порезов и правка дисков в Красноярске.</p>
+                <a href="tel:+79233221546" class="inline-flex items-center justify-center space-x-2 w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-3.5 px-4 rounded-xl border border-gray-700 transition">
+                    <i class="fa-solid fa-phone text-accentSky"></i>
+                    <span>Позвонить мастеру</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-8 px-4 border-t border-cardBorder text-center text-xs text-gray-500">
+        <div class="max-w-5xl mx-auto">
+            <p class="mb-2">© Шиносервис • Красноярск, ул. Ястынская, 19/3 (ИП Грачев Е.В.)</p>
+            <p>Информация на сайте не является публичной офертой.</p>
+        </div>
+    </footer>
+
+    <!-- Плавающая нижняя панель на мобильных -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-darkBg/95 backdrop-blur-md border-t border-cardBorder p-3 flex items-center justify-around md:hidden">
+        <a href="tel:+79233221546" class="flex-1 mr-2 bg-gradient-to-r from-accentBlue to-sky-500 text-white py-3 px-4 rounded-xl font-bold text-sm text-center shadow-lg shadow-accentSky/20 flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>Позвонить</span>
+        </a>
+        <a href="https://yandex.ru/maps/org/shinoservis/36256778326" target="_blank" class="flex-1 ml-2 bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-xl font-semibold text-sm text-center border border-gray-700 flex items-center justify-center space-x-2">
+            <i class="fa-solid fa-location-arrow text-accentSky"></i>
+            <span>Маршрут</span>
+        </a>
+    </div>
+
+</body>
+</html>
